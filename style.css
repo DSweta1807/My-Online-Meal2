@@ -81,7 +81,7 @@
 }
 #home::before{
     content: "";
-    background: url('../image//platter-2009590_1920\ -\ Copy.jpg');
+    background: url('platter-2009590_1920\ -\ Copy.jpg');
     /* background: url('../image/breakfast-690128_1920\ -\ Copy.jpg') no-repeat center center/cover; */
     /* background: url('../image//platter-2009590_1920\ -\ Copy.jpg') no-repeat center center/cover; */
     position: absolute;
@@ -135,7 +135,7 @@
 #client-section::before{
     content: "";
     position: absolute;
-    background: url(../image/crust-roast-3041399_1920\ -\ Copy.jpg);
+    background: url(crust-roast-3041399_1920\ -\ Copy.jpg);
     /* background: url(../image/mediterranean-cuisine-2378758_1920\ -\ Copy.jpg); */
     width: 100%;
     height: 100%;
@@ -165,7 +165,7 @@
     top: 0px;
     left: 0px;
     /* background: url(../image/contact-details-3381225_1920.jpg); */
-    background: url(../image/contact-us-4193523_1920.jpg);
+    background: url(contact-us-4193523_1920.jpg);
     /* background: url(../image/contact-us-5731122_1920.png); */
     /* background: url(../image/contact-us-1207797_1920.png); */
     width: 100%;
