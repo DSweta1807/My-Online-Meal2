@@ -1,0 +1,244 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* logo and images */
+ #logo{
+    margin: 8px;
+}
+#logo img{
+
+    height: 100px;
+    
+} 
+
+/* NAVIGATION BAR: list styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: grey;
+    position: absolute;
+    height: 92%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+}
+#navbar ul li{
+    /* color: wheat; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: wheat;
+    display: block;
+    text-decoration: none;  
+    padding: 3px 20px;
+    border-radius: 20px;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+
+/* Home section */
+#home{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../image//platter-2009590_1920\ -\ Copy.jpg');
+    /* background: url('../image/breakfast-690128_1920\ -\ Copy.jpg') no-repeat center center/cover; */
+    /* background: url('../image//platter-2009590_1920\ -\ Copy.jpg') no-repeat center center/cover; */
+    position: absolute;
+    height: 82%;
+    /* height: 500px; */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: yellow;
+    font-family: 'Bree Serif', serif;
+    /* text-align: center; */
+}
+#home p{
+    /* color: yellow; */
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* service section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(245, 239, 239);
+}
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+#services  .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/* Client section */
+#client-section{
+    position: relative;
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../image/crust-roast-3041399_1920\ -\ Copy.jpg);
+    /* background: url(../image/mediterranean-cuisine-2378758_1920\ -\ Copy.jpg); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 182px;
+
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* background: url(../image/contact-details-3381225_1920.jpg); */
+    background: url(../image/contact-us-4193523_1920.jpg);
+    /* background: url(../image/contact-us-5731122_1920.png); */
+    /* background: url(../image/contact-us-1207797_1920.png); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 58px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5;
+    height: 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-size: 3.8rem;
+    padding: 12x;
+}
+.h-secondary{
+    /* font-family: 'Bree Serif', serif; */
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    padding: 12x;
+}
+
+.btn{
+    font-weight: bold;
+    padding: 4px 20px;
+    border: 2px solid white;
+    background-color: rgb(241, 169, 101);
+    font-family: 'Bree Serif', serif;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: whitesmoke;
+    background-color: rgb(129, 11, 11);
+}
+
+.center{
+    text-align: center;
+}
+
